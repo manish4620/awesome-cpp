@@ -1,0 +1,23 @@
+try {
+  try_statements
+}
+[catch (exception_var_1 if condition_1) { // non-standard
+  catch_statements_1
+}]
+...
+[catch (exception_var_2) {
+  catch_statements_2
+}]
+[finally {
+  finally_statements
+}]
+try_statements
+The statements to be executed.
+catch_statements_1, catch_statements_2
+Statements that are executed if an exception is thrown in the try block.
+exception_var_1, exception_var_2
+An identifier to hold an exception object for the associated catch clause.
+condition_1
+A conditional expression.
+finally_statements
+Statements that are executed after the try statement completes. These statements execute regardless of whether an exception was thrown or caught.
